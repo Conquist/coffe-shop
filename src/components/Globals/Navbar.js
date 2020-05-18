@@ -19,7 +19,13 @@ export default function Navbar() {
     },
   ])
   const navbarHandler = () => {
-    console.log("menú abriendose/Cerrándose")
+    if (navbarOpen) {
+      setNavbarOpen(false)
+      setCss("collapse navbar-collapse")
+    } else {
+      setNavbarOpen(true)
+      setCss("collapse navbar-collapse show")
+    }
   }
 
   return (
@@ -35,13 +41,16 @@ export default function Navbar() {
         <ul className="navbar-nav mx-auto">
           {links.map(link => {
             return (
-              <li key={link.id}>
-                <Link className="nav-link" to={link.path}>
+              <li key={link.id} className="nav-item">
+                <Link to={link.path} className="nav-link">
                   {link.text}
                 </Link>
               </li>
             )
           })}
+          <li className="nav-item ml-sm-5">
+            <FaCartArrowDown className="cart.icon" />
+          </li>
         </ul>
       </div>
     </nav>

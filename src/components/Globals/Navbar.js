@@ -49,7 +49,7 @@ export default function Navbar() {
             )
           })}
           <li className="nav-item ml-sm-5">
-            <FaCartArrowDown className="cart.icon" />
+            <FaCartArrowDown className="cart-icon" />
           </li>
         </ul>
       </div>

@@ -20,7 +20,7 @@ h6 {
   font-family: "Courier New", Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
-.text-yelloy {
+.text-yellow {
   color: var(--mainYellow);
 }
 .cart-icon {
@@ -46,4 +46,8 @@ h6 {
 .btn-yellow:hover {
   background: var(--mainYellow);
   color: var(--mainBrown);
+}
+
+.footer {
+  background: var(--mainBrown);
 }
